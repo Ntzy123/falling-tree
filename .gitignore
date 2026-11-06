@@ -1,0 +1,62 @@
+# ============================================================
+# 网易我的世界（基岩版 / MC Studio AddOn）项目
+# 注意：行为包 *B/ 与资源包 *R/ 里的 .py / .json / 贴图等都是源码，必须提交
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ---------- 编辑器 / 操作系统 ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- MC Studio 运行、调试与缓存产物 ----------
+*.log
+logs/
+Log/
+Debug/
+debug/
+Temp/
+temp/
+.cache/
+*.tmp
+*.bak
+*.orig
+*.pyc.bak
+
+# ---------- 导出的 AddOn / 地图包（发布产物，非源码） ----------
+*.mcpack
+*.mcaddon
+*.mcworld
+
+# ---------- 工程本地配置（按需启用） ----------
+# studio.json 记录账号、本地路径、编辑与测试时长等本机状态，
+# 每次打开/测试工程都会被改写，容易产生无意义提交；
+# 但它也是 MC Studio 识别并打开工程所需的配置文件。
+# 若为单人开发、不想追踪这些改动，取消下一行注释即可：
+# studio.json
